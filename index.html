@@ -12,16 +12,13 @@
             box-sizing: border-box;
         }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("https://i.postimg.cc/FztkZ676/velona-rp.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    padding: 20px;
-}
-        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -104,29 +101,26 @@ body {
 
         .webhook-section {
             background: linear-gradient(135deg, #ff6b6b, #feca57);
-            color: blue(#303ad2);
+            color: white;
             border-radius: 15px;
             padding: 20px;
             margin-bottom: 25px;
         }
 
         .webhook-section h3 {
-            color: blue(#303ad2);
+            color: white;
             margin-bottom: 15px;
         }
 
-.webhook-url {
-    background: rgba(255, 165, 0, 0.2);  /* fond orange transparent */
-    border: 1px solid rgba(255, 165, 0, 0.2);  /* bordure identique au fond */
-    color: black;  /* texte saisi en noir pour être lisible */
-    padding: 8px 12px;  /* optionnel : plus confortable */
-    border-radius: 6px; /* optionnel : coins arrondis */
-    font-size: 16px;    /* optionnel : texte plus lisible */
-}
+        .webhook-url {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
 
-.webhook-url::placeholder {
-    color: rgba(0, 0, 0, 0.5); /* placeholder noir semi-transparent */
-}
+        .webhook-url::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
 
         .priority-section {
             background: linear-gradient(135deg, #764ba2, #667eea);
