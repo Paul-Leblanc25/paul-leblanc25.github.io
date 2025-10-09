@@ -1,5 +1,3 @@
-je te donne le script tiens c'est mon index.html j'aimerais que tu mettent dedans tout ce que tu pense etre bon et qui pourras emeliorer l'interface sans racourcire le code laisse le moi sans le changer
-: 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,12 +12,15 @@ je te donne le script tiens c'est mon index.html j'aimerais que tu mettent dedan
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
+        .body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://i.postimg.cc/FztkZ676/velona-rp.webp"); /* chemin de ton image */
+    background-size: cover;     /* l’image couvre tout l’écran */
+    background-position: center; /* centrée */
+    background-repeat: no-repeat; /* pas de répétition */
+    min-height: 100vh;
+    padding: 20px;
+}
 
         .container {
             max-width: 1400px;
@@ -103,26 +104,29 @@ je te donne le script tiens c'est mon index.html j'aimerais que tu mettent dedan
 
         .webhook-section {
             background: linear-gradient(135deg, #ff6b6b, #feca57);
-            color: white;
+            color: blue(#303ad2);
             border-radius: 15px;
             padding: 20px;
             margin-bottom: 25px;
         }
 
         .webhook-section h3 {
-            color: white;
+            color: blue(#303ad2);
             margin-bottom: 15px;
         }
 
-        .webhook-url {
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: white;
-        }
+.webhook-url {
+    background: rgba(255, 165, 0, 0.2);  /* fond orange transparent */
+    border: 1px solid rgba(255, 165, 0, 0.2);  /* bordure identique au fond */
+    color: black;  /* texte saisi en noir pour être lisible */
+    padding: 8px 12px;  /* optionnel : plus confortable */
+    border-radius: 6px; /* optionnel : coins arrondis */
+    font-size: 16px;    /* optionnel : texte plus lisible */
+}
 
-        .webhook-url::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
+.webhook-url::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* placeholder noir semi-transparent */
+}
 
         .priority-section {
             background: linear-gradient(135deg, #764ba2, #667eea);
