@@ -14,14 +14,17 @@
 
          body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("https://i.postimg.cc/fyPnqpQc/1849553-fond-or-moderne-vectoriel.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("https://i.postimg.cc/fyPnqpQc/1849553-fond-or-moderne-vectoriel.jpg") center/cover no-repeat;
+    animation: moveBackground 30s infinite linear;
     min-height: 100vh;
     padding: 20px;
 }
 
+@keyframes moveBackground {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
 
         .container {
             max-width: 1400px;
